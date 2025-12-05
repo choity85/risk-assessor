@@ -18,6 +18,6 @@ pip install -r requirements.txt
 python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 
 **## Run Frontend**
-cd risk-assessor/frontend
-npm run dev -- --host 0.0.0.0 --port 5173
-
+cd ~/risk-assessor/frontend
+npm install
+./node_modules/.bin/vite --host 0.0.0.0 --port 5173

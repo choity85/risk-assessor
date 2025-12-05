@@ -10,13 +10,14 @@ A web-based **passive** security risk assessment tool that checks:
 
 ## Run Backend
 ```bash
-cd backend
+git clone https://github.com/choity85/risk-assessor.git
+cd risk-assessor/backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 
 **## Run Frontend**
-cd /risk-assessor/frontend
+cd risk-assessor/frontend
 npm run dev -- --host 0.0.0.0 --port 5173
 
